@@ -130,6 +130,16 @@ agent = Agent(
 # ---------- 2. FastAPI app ----------
 
 app = FastAPI(title="Youtuber RAG API")
+@app.get("/")
+async def root():
+    return {"status": "ok", "message": "App is running"}
+
+# your other routes:
+# @app.get("/something")
+# @app.post("/something-else")
+
+
+
 
 # Allow local Streamlit to call the API (CORS)
 app.add_middleware(

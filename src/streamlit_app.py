@@ -6,7 +6,10 @@ Streamlit frontend for the Youtuber RAG assistant (Task 2).
 import requests
 import streamlit as st
 
-API_URL = "http://127.0.0.1:8000/chat"  # FastAPI endpoint
+#API_URL = "http://127.0.0.1:8000/chat"  # FastAPI endpoint
+API_URL = "http://127.0.0.1:7072/chat"
+# or "http://localhost:7072/chat"
+
 
 
 st.set_page_config(page_title="Youtuber RAG Chat", page_icon="🎥", layout="centered")
