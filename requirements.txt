@@ -11,3 +11,5 @@ lancedb
 google-generativeai
 python-dotenv
 requests
+streamlit
+
